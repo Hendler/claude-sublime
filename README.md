@@ -15,6 +15,16 @@ SublimeClaude is a Sublime Text extension that allows users to interact with the
 3. Type "Package Control: Install Package" and press Enter
 4. Search for "SublimeClaude" and press Enter to install
 
+## Dependency Installation
+This package uses Package Control's dependency system. To ensure all dependencies are installed:
+
+1. Open Sublime Text
+2. Open the Command Palette (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on macOS)
+3. Type "Package Control: Satisfy Dependencies" and press Enter
+4. Wait for the installation to complete
+
+This will install all necessary dependencies for the Claude Sublime extension to function properly.
+
 ## Usage Instructions
 1. Set up your Anthropic API key in the settings (see Configuration section)
 2. To start chatting with Claude:
