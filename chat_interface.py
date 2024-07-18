@@ -1,5 +1,9 @@
 import sublime
 import sublime_plugin
+
+import os
+import sys
+
  # Add the path to the bundled dependency
 dependency_path = os.path.join(sublime.packages_path(), 'my_plugin', 'dependencies', 'anthropic')
 if dependency_path not in sys.path:
