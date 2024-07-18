@@ -90,7 +90,7 @@ class ClaudeChatView(sublime_plugin.WindowCommand):
                 region = self.chat_view.find(block, self.chat_view.size() - len(message))
                 if region:
                     self.chat_view.add_regions(
-                        f"code_block_{i}",
+                        "code_block_{}".format(i),
                         [region],
                         "string",
                         "",
