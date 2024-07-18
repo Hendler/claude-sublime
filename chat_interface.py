@@ -10,7 +10,7 @@ try:
     from anthropic import AnthropicAPI
     print("AnthropicAPI imported successfully.")
 except ImportError as e:
-    print(f"Failed to import AnthropicAPI: {e}")
+    print("Failed to import AnthropicAPI: {}".format(e))
 
 
 
