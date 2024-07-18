@@ -1,6 +1,18 @@
 import sublime
 import sublime_plugin
-from .api_interaction import AnthropicAPI
+ # Add the path to the bundled dependency
+dependency_path = os.path.join(sublime.packages_path(), 'my_plugin', 'dependencies', 'anthropic')
+if dependency_path not in sys.path:
+    sys.path.append(dependency_path)
+
+
+try:
+    from anthropic import AnthropicAPI
+    print("AnthropicAPI imported successfully.")
+except ImportError as e:
+    print(f"Failed to import AnthropicAPI: {e}")
+
+
 
 class ClaudeChatView(sublime_plugin.WindowCommand):
     def run(self):
